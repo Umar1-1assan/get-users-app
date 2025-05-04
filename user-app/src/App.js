@@ -6,7 +6,7 @@ function App() {
   const [user, setUser] = useState([]);
 
   const getUser = () => {
-    fetch('http://localhost:5000/api/users')
+    fetch('/api/users')
       .then(response => response.json())
       .then(data => {
         setUser(data); // ✅ Update state with fetched data
